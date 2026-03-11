@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pH Titration Curve</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>pH Titration Curve</h1>
+      <p class="subtitle">Virtual solution (analyte) vs titrant — de Levie unified equation</p>	  
+    </header>	
+    <main class="main">
+      <section class="panel analyte-panel">
+        <h2>Analyte (virtual solution)</h2>
+        <p class="hint">Add species and concentrations. Volume is fixed (e.g. 50 mL).</p>
+        <div class="analyte-volume-row">
+          <label for="analyte-volume">Initial volume (mL)</label>
+          <input type="number" id="analyte-volume" value="50" min="0.1" step="1">
+        </div>
+        <ul id="analyte-list" class="species-list"></ul>
+        <div class="add-species-row">
+          <div class="add-species add-species-standard">
+            <label for="analyte-compound">Add standard compound</label>
+            <div class="add-row">
+              <select id="analyte-compound">
+                <option value="">— Select —</option>
+              </select>
+              <input type="number" id="analyte-concentration" placeholder="Concentration (M)" min="0" step="0.001">
+              <button type="button" id="analyte-add">Add</button>
+            </div>
+          </div>
+          <div class="add-species add-species-custom">
+            <label for="analyte-compound-custom">Add custom compound</label>
+            <div class="add-row">
+              <select id="analyte-compound-custom">
+                <option value="">— Select —</option>
+              </select>
+              <input type="number" id="analyte-concentration-custom" placeholder="Concentration (M)" min="0" step="0.001">
+              <button type="button" id="analyte-add-custom">Add</button>
+              <button type="button" id="analyte-remove-custom" class="btn-remove-compound" title="Remove selected custom compound from your list">Remove</button>
+            </div>
+            <div class="custom-compound">
+              <button type="button" id="btn-add-custom">+ Add custom acid/base</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel titrant-panel">
+        <h2>Titrant</h2>
+        <p class="hint">Concentration and pK<sub>a</sub> of the titrant (for bases use conjugate-acid pK<sub>a</sub> = 14 − pK<sub>b</sub>). Acid vs base inferred from pKa (first &lt; 7 = acid; ≥ 7 or empty = base).</p>
+        <div class="titrant-fields">
+          <div class="field">
+            <label for="titrant-concentration">Concentration (M)</label>
+            <input type="number" id="titrant-concentration" value="0.1" min="0" step="0.001">
+          </div>
+          <div class="field">
+            <label for="titrant-pkas">pK<sub>a</sub> (comma-separated)</label>
+            <input type="text" id="titrant-pkas" placeholder="e.g. empty or 14 (strong base), -6 (strong acid), 9.25">
+          </div>
+        </div>
+      </section>
+
+      <section class="panel curve-panel">
+        <h2>Titration curve</h2>
+        <p class="hint">pH vs titrant volume. Recalculated when analyte or titrant changes.</p>
+        <div class="curve-and-indicators">
+          <div class="curve-wrap">
+            <canvas id="curve-canvas" width="800" height="450"></canvas>
+            <div id="curve-legend" class="curve-legend"></div>
+          </div>
+          <div class="indicators-column">
+            <div class="indicators-header">
+              <input type="checkbox" id="show-indicator-gradient" class="indicators-checkbox" checked aria-label="Show indicator gradient on plot">
+              <label for="show-indicator-gradient" class="indicators-label">Indicators:</label>
+            </div>
+            <div id="indicators-list" class="indicators-list" role="listbox" aria-label="pH indicator list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+	  <p><a href="https://github.com/Ty-Matthews-WebApps/Titrator" target="_blank">GitHub repo</a>.  This application was 99.9% AI generated using <a href="https://cursor.com/get-started" target="_blank">Cursor</a></p>	  
+      <p>Based on the exact unified equation (charge balance + autoprotolysis) following <a href="https://pubs.acs.org/doi/full/10.1021/ac950430l" target="_blank">Robert de Levie, <em>Anal. Chem.</em> 1996, 68, 585–590</a>.</p>
+      <p>pH indicator list from CRC reference data (acid–base indicators): <a href="https://diverdi.colostate.edu/all_courses/CRC%20reference%20data/acid-base%20indicators.pdf" target="_blank">Colorado State — CRC acid-base indicators (PDF)</a>.</p>      
+	</footer>
+  </div>
+
+  <!-- Modal: custom compound (pKa only) -->
+  <div id="modal-custom" class="modal" hidden>
+    <div class="modal-content">
+      <h3>Add custom compound</h3>
+      <div class="field">
+        <label for="custom-name">Name</label>
+        <input type="text" id="custom-name" placeholder="e.g. My acid">
+      </div>
+      <div class="field">
+        <label for="custom-pkas">pK<sub>a</sub> values (comma-separated)</label>
+        <input type="text" id="custom-pkas" placeholder="e.g. 4.76 (for bases use 14 − pK<sub>b</sub>)">
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="custom-save">Save</button>
+        <button type="button" id="custom-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/constants.js"></script>
+  <script src="js/compounds.js"></script>
+  <script src="js/chemistry.js"></script>
+  <script src="js/indicators.js"></script>
+  <script src="js/curve.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
