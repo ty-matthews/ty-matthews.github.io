@@ -11,7 +11,7 @@ editor for Duke Nukem 3d.">
 <BODY BGCOLOR="#FFFFFF" LINK="#ff6347" ALINK="#ff6347" VLINK="40a0a0">
 
 <H1>Cranes</H1>
-<IMG SRC="build.gif">
+<IMG SRC="BUILD.GIF">
 
 <BR>
 <BR>
@@ -20,11 +20,11 @@ editor for Duke Nukem 3d.">
 <TR>
 <TD VALIGN="MIDDLE" WIDTH="75%">
 Cranes are yet another of Duke 3D's many fascinating features. By their ability to pick up and drop any graphic sprite (whether fixed or animated) at predetermined locations, they offer  many possibilities to the map designer and can bring another tactical element to the game when used in Dukematch levels. Oddly enough, very little has been written about cranes (the BuildDocs omit them entirely) although they are used in the popular E1L4 level: Toxic Dump.
- While cranes operate all by themselves,  <A HREF="convey.htm">conveyor belts</A> will be needed in most instances for moving objects around.<BR>
+ While cranes operate all by themselves,  <A HREF="CONVEY.HTM">conveyor belts</A> will be needed in most instances for moving objects around.<BR>
 <BR>
 Start by making a large outer sector and two smaller inner void  sectors as shown here. Go to 3D mode right away and make the ceiling height about 70 clicks above the floor. Go back to 2D mode and draw the remaining sectors by adding new vertices where required and also by splitting the existing ones. Raise the floor of sectors <B>2, 3, 4, 5, 6, 7</B> and <B>9</B> high enough so that Duke can't jump up to them (30 clicks in the example map) and raise the floor of sectors <B>1</B> and <B>8</B> a few clicks to create a platform. Also, raise the ceiling height of sectors <B>1, 2, 3, 4, A,</B> and <B>B</B> by 4 clicks above the previously set ceiling height. These will be the crane ceiling &quot;track&quot; sectors.</TD>
 <TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="25%">
-<IMG SRC="cranes1.gif">
+<IMG SRC="CRANES1.GIF">
 </TD>
 </TR>
 </TABLE></CENTER>
@@ -35,13 +35,13 @@ Start by making a large outer sector and two smaller inner void  sectors as show
 <CENTER><TABLE CELLPADDING="0" ALIGN="center">
 <TR>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="20%">
-<IMG SRC="cranes2.gif" WIDTH="190" HEIGHT="410">
+<IMG SRC="CRANES2.GIF" WIDTH="190" HEIGHT="410">
 </TD>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="65%">
 Using the '<B>S</B>' key, place two sprites at the locations shown in the  picture on the left. Next, go to 3D mode and with the cursor  pointing at the sprite in sector 1, hit '<B>V</B>'  twice. Select tile <B>#1221</B>, a vertical pole appears. As far as the cranepole sprite is concerned, you can bring it all the way to the ceiling or the the floor or even just leave it where it is, this has no effect on its function in gameplay. Aim the cursor at the second sprite, hit '<B>V</B>'  twice, select tile <B>#1222</B><B> </B>and the crane appears. This sprite has to be on the ceiling to work properly so hit '<B>Ctrl-PgUp</B>' while aiming at it. Go back to 2D mode, point the mouse cursor on the cranepole sprite, hit '<B>B</B>' to make it &quot;blocking&quot; and using '<B>Alt-H</B>', assign a unique <B>hitag</B> to it (1 in this case). Change the <B>hitag</B> of the crane sprite to the same value as its target cranepole and use the '<B>&lt;</B>' and '<B>&gt;</B>' keys to change the angle so it points in the direction the  crane will travel.   Repeat this process for the crane-cranepole pair  in the picture on the right using different <B>hitags</B>. The lotag values of these sprites have no effect. Just make sure the crane sprites sit exactly in the center of their &quot;track&quot; sector.
 </TD>
 <TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="15%">
-<IMG SRC="cranes3.gif">
+<IMG SRC="CRANES3.GIF">
 </TD>
 </TR>
 </TABLE></CENTER>
@@ -51,9 +51,9 @@ Using the '<B>S</B>' key, place two sprites at the locations shown in the  pictu
 
 <CENTER><TABLE CELLPADDING="0" ALIGN="center">
 <TR>
-<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="30%"><IMG SRC="cranesA.gif"></TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="30%"><IMG SRC="CRANESA.GIF"></TD>
 <TD WIDTH="5%"></TD>
-<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="40%"><IMG SRC="cranesB.gif"></TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="40%"><IMG SRC="CRANESB.GIF"></TD>
 </TR>
 <TR>
 <TD ALIGN="CENTER" VALIGN="TOP" WIDTH="30%"><B>Cranepole sprite</B></TD>
@@ -75,7 +75,7 @@ At this point, feel free to take a little time to change the ceiling &quot;track
 <TABLE CELLPADDING="0">
 <TR>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="15%">
-<IMG SRC="cranes4.gif">
+<IMG SRC="CRANES4.GIF">
 </TD>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="85%">
 Now, in 2D mode, insert SectorEffector sprites in  sectors <B>2, 4, 5, 6, 7, </B><B>8</B> and <B>9</B> where the conveyor belts will be, hit the '<B>Alt-T</B>' key and change their <B>lotag</B> value to <B>24</B>. Change the angle of these sprites to point in the direction of belt displacement as shown in the pictures left and below, there are 7 in all. Also, place 4 NukeBarrel sprites at various locations on the conveyor belts. In this example map, they have been made to be &quot;blocking&quot; but  this is not necessary.  </TD>
@@ -87,7 +87,7 @@ Now, in 2D mode, insert SectorEffector sprites in  sectors <B>2, 4, 5, 6, 7, </B
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="70%">
 While cranes can pick up any graphical sprite, some behave strangely and won't go all the way to the floor when dropped. From here, it's a matter of trial and error if you want to use other sprites. NukeBarrels work well and they spill a puddle of radioactive sludge when shot (not on moving floors or in mid-air though).</TD>
 <TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="30%">
-<IMG SRC="cranes5.gif">
+<IMG SRC="CRANES5.GIF">
 </TD>
 </TR>
 </TABLE>
@@ -96,10 +96,10 @@ While cranes can pick up any graphical sprite, some behave strangely and won't g
 <BR>
 
 <P>
-Go to 3D mode and change the floor texture of the sectors to tile <B>#1156</B>. It might be necessary at this point to make the floors Relatively Aligned by using the '<B>R</B>' key while pointing at them with the mouse cursor. Make sure that the lines in the belt are oriented the right way and that, once in the game, the belts are moving in the same direction as the floor. It might be necessary to  use the '<B>F</B>' key to align the textures properly. For a detailed description of this process, consult the <A HREF="align.htm">floor texture alignment</A> tutorial.
+Go to 3D mode and change the floor texture of the sectors to tile <B>#1156</B>. It might be necessary at this point to make the floors Relatively Aligned by using the '<B>R</B>' key while pointing at them with the mouse cursor. Make sure that the lines in the belt are oriented the right way and that, once in the game, the belts are moving in the same direction as the floor. It might be necessary to  use the '<B>F</B>' key to align the textures properly. For a detailed description of this process, consult the <A HREF="ALIGN.HTM">floor texture alignment</A> tutorial.
 </P>
 
-<P ALIGN="center"><IMG SRC="cranesC.gif"></P>
+<P ALIGN="center"><IMG SRC="CRANESC.GIF"></P>
 
 <BR>
 
@@ -169,7 +169,7 @@ Go to 3D mode and change the floor texture of the sectors to tile <B>#1156</B>. 
 Page written by:
 </TD>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="10%">
-<A HREF="mailto:jfgrol@cam.org"><IMG SRC="jfanim.gif" BORDER="0" WIDTH="110" HEIGHT="96"></A>
+<A HREF="mailto:jfgrol@cam.org"><IMG SRC="JFANIM.GIF" BORDER="0" WIDTH="110" HEIGHT="96"></A>
 </TD>
 </TR>
 </TABLE></CENTER>
@@ -177,7 +177,7 @@ Page written by:
 <BR>
 <BR>
 
-<H3 ALIGN="center"><A HREF="local.htm">Download this page locally</A></H3>
+<H3 ALIGN="center"><A HREF="LOCAL.HTM">Download this page locally</A></H3>
 <h3 align="center"><a href="cranem.zip">Download the Crane map</a></h3>
 <BR>
 <BR>
@@ -190,7 +190,7 @@ Page written by:
 Duke Nukem 3D is copyright &copy;1996
 </TD>
 <TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="17%">
-<A HREF="http://www.3drealms.com/"><IMG SRC="3drealms.gif" BORDER="0"></A>
+<A HREF="http://www.3drealms.com/"><IMG SRC="3DREALMS.GIF" BORDER="0"></A>
 </TD>
 <TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="18%">
 , All Rights reserved.
@@ -203,12 +203,12 @@ Duke Nukem 3D is copyright &copy;1996
 <CENTER><TABLE CELLPADDING="0" ALIGN="center">
 <TR>
 <TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="10%">
-<IMG SRC="duke.gif">
+<IMG SRC="DUKE.GIF">
 </TD>
 <TD ALIGN="LEFT" VALIGN="MIDDLE" WIDTH="50%">
 Copyright &copy;1996 <a href="mailto:jfgrol@cam.org">Jean-Francois Groleau</a>, All Rights reserved.<BR>
-<A HREF="dukefaq.htm">Go back to my Duke FAQ BUILD page<BR>
-</A><A HREF="duketxt.htm">Go back to my Duke FAQ BUILD page Text-Only</A>
+<A HREF="DUKEFAQ.HTM">Go back to my Duke FAQ BUILD page<BR>
+</A><A HREF="DUKETXT.HTM">Go back to my Duke FAQ BUILD page Text-Only</A>
 </TD>
 </TR>
 </TABLE></CENTER>
