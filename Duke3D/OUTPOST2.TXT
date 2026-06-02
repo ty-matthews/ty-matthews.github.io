@@ -1,0 +1,79 @@
+=============================================================================
+Title			: Outpost 2
+Filename		: outpost2.map
+Author			: Byron Collins
+Email Address		: bcollins@nrv.net
+Misc. Author Info.	: I have made levels for Doom2, Hexen, and now Duke3d.
+			  I maintain two websites related to these games...
+			  Cyberdemon's Doom2 and Hexen page:
+			      http://www.geocities.com/timessquare/2598
+			  Byron's Duke Nukem 3d Page:
+			      http://www.geocities.com/timessquare/1956
+					Check them out!
+			  I'm also a member of a non-profit software company,
+			  headed by Paul Thureen:
+			      http://cobweb.cord.edu/~pthureen/rocket.html
+Description		: The sequel to outpost is ready!  Outpost2 adds about
+			  100+ more hours to my original level and has the following
+			  new features and improvements:
+				-Added monsters, keys for a one-player game
+				-Added a 2-way train
+				-new control room
+				-"generator" room with upper and lower level,
+				 accessible by elevator.
+				-9 shocking, moving generators
+				-sliding doors
+				-changed some sounds and textures
+				-changed player starts around
+				-changed some weapon locations
+				-more lighting and sound effects
+				-added exit: an "escape ship"
+				-new ductwork
+				-extended crew-quarters
+			  I only ask that you Email me your thoughts on the level,
+			  good or bad, as compensation for my time (about 200hrs.).
+Additional Credits to	: Apogee and 3dRealms, the Duke team, Build creators, 
+			  Geocities, Paul Thureen, Nelson Simpkins.
+=============================================================================
+* Play Info. *
+
+Episode and Level #	: E1L1
+Single Player		: Yes
+Cooperative		: Yes
+DukeMatch Level		: Yes!!!
+Difficulty Settings	: No
+Build time		: total outpost and outpost2: 200+ hours!
+
+* Construction *
+
+Base			: Outpost.map by me.
+Editor Used		: Build
+Known bugs		: Well, um... I tried to get rid of all of them, but there
+			  are a few:
+			1.) Be careful in the "red hall" (with the rotating light),
+			    for some reason, in the corner, when you press hard
+			    against it, it kills you and you start over.
+			2.) Sometimes at certain parts in the ducts, you get
+			    killed, (this has only happened once as far as I know).
+			3.) some texture flaws, but not many.
+			4.) Under the "catwalk" in the lower generator room, you can 
+			    see through the floor if you look up.. this doesn't affect the
+			    game, but looks weird.  I checked 3dRealms' levels and they do the
+			    same thing.
+
+Authors MAY NOT use this level as a base to build additional levels without my
+prior consent!!!!
+
+* Where to get this Map file *
+
+Ftp sites		: ? none (are there any public Duke sites?)
+BBS Numbers		: none
+Other			: Various Webpages about Duke3d (including mine, listed
+			  above.)
+
+* Notes *
+
+-All weapons can be found on this level (RPG is in a secret room)
+-Please mail comments/bugs
+-Have fun!
+
